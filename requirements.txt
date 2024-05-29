@@ -28,4 +28,4 @@ chart-studio
 nltk
 kaggle
 joblib
-base64
+Pillow
