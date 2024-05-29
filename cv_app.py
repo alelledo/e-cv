@@ -263,40 +263,19 @@ with tab1:
     )
 #------------------------------TAB 2------------------------------
 with tab2:
-    # Read the PDF file
-    with open(pdf_file, "rb") as f:
-        pdf_data = f.read()
+    # Path to your local image
+        image_path = "imgs/Screenshot 2024-05-29 at 19.09.50.png"
+# Read the image file
+        with open(image_path, "rb") as image_file:
+            encoded_image = base64.b64encode(image_file.read()).decode()
 
-    # Embed PDF file
-    base64_pdf = base64.b64encode(pdf_data).decode('utf-8')
-
-    # CSS to make the iframe responsive
-    st.markdown(
-        """
-        <style>
-        .pdf-container {
-            width: 100%;
-            height: 0;
-            padding-bottom: 80%;
-            position: relative;
-        }
-        .pdf-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    # HTML to display the iframe
-    pdf_display = f'<div class="pdf-container"><iframe src="data:application/pdf;base64,{base64_pdf}" type="application/pdf"></iframe></div>'
-
-    # Display PDF
-    st.markdown(pdf_display, unsafe_allow_html=True)
-
+        # Display the image centered and make it unclickable
+        st.markdown(
+            f'<div style="display: flex; justify-content: center;">'
+            f'    <img src="data:image/png;base64,{encoded_image}" alt="Centered Image" width="700" style="pointer-events: none;">'
+            f'</div>',
+            unsafe_allow_html=True
+        )
 #------------------------------TAB 3------------------------------
 with tab3:
     st.markdown('''MSc graduate in Marketing Analytics and Data Science, with a focus in data analysis, modelling and forecasting, using R, Python and SQL,
