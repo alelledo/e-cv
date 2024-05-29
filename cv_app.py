@@ -1,8 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import plotly.express as px
 import joblib
 import base64
 
@@ -131,7 +127,7 @@ with tab1:
 
 #-----------------------------SENTIMENT ANALYSIS------------------------------------
         # Path to your local image
-        image_path = "/Users/alejandrovillanuevalledo/Documents/Important stuff/CV/streamlit CV /imgs/Conceptual Model.jpeg"
+        image_path = "imgs/Conceptual Model.jpeg"
 
         # Read the image file
         with open(image_path, "rb") as image_file:
@@ -176,7 +172,7 @@ with tab1:
         
         #------------------------------AIRBNB--------------------------------
 # Path to your local image
-        image_path = "/Users/alejandrovillanuevalledo/Documents/Important stuff/CV/streamlit CV /imgs/Screenshot 2024-05-27 at 16.15.08.png"
+        image_path = "imgs/Screenshot 2024-05-27 at 16.15.08.png"
 
         # Read the image file
         with open(image_path, "rb") as image_file:
