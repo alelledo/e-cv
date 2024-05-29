@@ -4,7 +4,7 @@ import base64
 
 #------MAIN CONTENT------ 
 # Path to your PDF file
-pdf_file = "/Users/alejandrovillanuevalledo/Documents/Important stuff/CV/Alejandro CVs 0524.pdf"
+pdf_file = "pdf/Alejandro CVs 0524.pdf"
 
 st.set_page_config(
     page_title= 'Alejandro Villanueva', 
