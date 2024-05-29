@@ -27,3 +27,5 @@ geopandas
 chart-studio
 nltk
 kaggle
+joblib
+base64
