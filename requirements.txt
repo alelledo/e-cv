@@ -15,6 +15,7 @@ ortools
 
 # APIs y scripts
 wandb
+pip install --upgrade streamlit
 streamlit
 Flask
 gunicorn
