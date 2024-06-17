@@ -1,6 +1,6 @@
 # Librerías esenciales
 numpy
-pandas==1.5.4
+pandas==2.0.0
 openpyxl
 
 # Visualizaciones
