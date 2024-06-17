@@ -1,16 +1,16 @@
 # Librerías esenciales
-numpy == 1.22
-pandas==1.5.2
-openpyxl== 3.0.9
+numpy
+pandas==1.5.3
+openpyxl
 
 # Visualizaciones
-matplotlib == 3.4.3
-seaborn == 0.11.2
-plotly-express== 0.5.0
+matplotlib
+seaborn
+plotly-express
 
 # Modelado y computación
-scikit-learn== 1.0.1
-scipy== 1.7.1
+scikit-learn
+scipy
 ortools
 
 # APIs y scripts
